@@ -62,4 +62,32 @@ python app.py
 
 Open:
 
-http://127.0.0.1:5000
+http://127.0.0.1:5000 
+
+## Dataset
+
+This project uses the Credit Card Fraud Detection dataset.
+
+Dataset source:
+Kaggle - Credit Card Fraud Detection Dataset
+
+The dataset contains:
+- 284,807 transactions
+- 30 features
+- Target variable: Class
+  - 0 → Normal transaction
+  - 1 → Fraud transaction
+
+Features:
+- Time
+- Amount
+- V1 to V28 (PCA transformed features)
+
+Due to GitHub file size limitations, the dataset is not included in this repository.
+
+To run the project:
+1. Download the dataset.
+2. Place the CSV file inside the `uploads/` folder.
+3. Run the Flask application.
+
+
