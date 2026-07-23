@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Fraud Detection Dashboard
+</title>
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+ML Fraud Detection Dashboard
+</h1>
+
+
+
+<input 
+type="file"
+id="csvFile"
+accept=".csv">
+
+
+<br>
+
+
+<button onclick="uploadFile()">
+
+Analyze Transactions
+
+</button>
+
+
+
+
+<div id="result">
+
+</div>
+
+
+
+
+<h2>
+Fraud Analysis
+</h2>
+
+
+<canvas id="fraudChart"></canvas>
+
+
+<br><br>
+
+
+<h2>
+Fraud Probability Analysis
+</h2>
+
+
+<canvas id="probabilityChart"></canvas>
+
+
+
+
+
+<h2>
+Detected Fraud Transactions
+</h2>
+
+
+
+<table id="fraudTable">
+
+
+<thead>
+
+<tr>
+
+<th>
+Amount
+</th>
+
+
+<th>
+Fraud Probability
+</th>
+
+
+</tr>
+
+</thead>
+
+
+
+<tbody>
+
+</tbody>
+
+
+</table>
+
+
+
+
+<br>
+
+
+
+<h2>
+Why was this transaction flagged?
+</h2>
+
+
+
+<table id="shapTable">
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+Feature
+</th>
+
+
+<th>
+Impact
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody>
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+<script src="/static/script.js"></script>
+
+
+</body>
+
+
+</html>
